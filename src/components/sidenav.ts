@@ -25,12 +25,16 @@ class SideNavContent {
     }
   }
   setOpen(){
+    /*
     this.renderer.setElementClass(this.el, 'side-nav__content--animatable', true);
     this.renderer.setElementStyle(this.el, 'transform', 'translateX(0px)');
+    */
   }
   setClosed(){
+    /*
     this.renderer.setElementClass(this.el, 'side-nav__content--animatable', true);
     this.renderer.setElementStyle(this.el, 'transform', 'translateX(-102%)');
+    */
   }
   cleanup(){
     this.renderer.setElementClass(this.el, 'side-nav__content--animatable', false);
@@ -48,9 +52,10 @@ class SideNavContent {
         <h1 class="side-nav__title">App shell</h1>
       </div>
 
-      <div class="side-nav__body">
+      <div class="side-nav__body"><!--
         <a role="tab" tabindex="0" class="side-nav__blog-post" [routerLink]="['/Home']">Index</a>
         <a role="tab" tabindex="0" class="side-nav__blog-post" [routerLink]="['/About']">About</a>
+        -->
         <a role="tab" tabindex="0" class="side-nav__blog-post" href="/url-2">URL 2</a>
       </div>
 
